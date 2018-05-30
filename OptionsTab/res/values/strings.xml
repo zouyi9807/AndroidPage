@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">OptionsTab</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="exitApp">退出系统</string>
+    <string name="exitMessage">您真的想退出本系统吗？</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+</resources>

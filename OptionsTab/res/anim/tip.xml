@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" >
+<!-- 
+1.<alpha>是渐变动画，可以实现fadeIn和fadeOut的效果，与之对应的Java对象是AlphaAnimation 
+2.<scale>是缩放动画，可以实现动态调控件尺寸的效果，与之对应的Java对象是ScaleAnimation
+3.<translate>是位移动画，代表一个水平、垂直的位移。与之对应的Java对象是TranslateAnimation
+4.<rotate>是旋转动画，与之对应的Java对象是RotateAnimation.
+
+如果我们添加了android:fillAfter="true"后，这个动画执行完之后保持最后的状态；
+android:duration="integer"代表动画持续的时间，单位为毫秒。
+-->
+
+<!-- Interpolator对象 	资源ID 															功能作用
+AccelerateDecelerateInterpolator 	@android:anim/accelerate_decelerate_interpolator 	先加速再减速
+AccelerateInterpolator 	@android:anim/accelerate_interpolator 							加速
+AnticipateInterpolator 	@android:anim/anticipate_interpolator 	先回退一小步然后加速前进
+AnticipateOvershootInterpolator 	@android:anim/anticipate_overshoot_interpolator 	在上一个基础上超出终点一小步再回到终点
+BounceInterpolator 	@android:anim/bounce_interpolator 	最后阶段弹球效果
+CycleInterpolator 	@android:anim/cycle_interpolator 	周期运动
+DecelerateInterpolator 	@android:anim/decelerate_interpolator 	减速
+LinearInterpolator 	@android:anim/linear_interpolator 	匀速
+OvershootInterpolator 	@android:anim/overshoot_interpolator 	快速到达终点并超出一小步最后回到终点 -->
+
+
+    <!--
+             <rotate  
+            android:fromDegrees="0"  
+ rotate.xmlrotate.xmlrotate.xml           android:toDegrees="359"  
+            android:duration="500"  
+            android:repeatCount="-1"  
+            android:pivotX="50%"  
+            android:pivotY="50%" />
+    -->
+    
+
+        
+    <!-- Tween动画是操作某个控件让其展现出旋转、渐变、移动、缩放的这么一种转换过程，我们成为补间动画 -->
+    <scale
+        android:duration="500"
+        android:fromXScale="0.8"
+        android:fromYScale="0.8"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:repeatCount="-1"
+        android:toXScale="1.0"
+        android:toYScale="1.0" />
+   
+</set>
